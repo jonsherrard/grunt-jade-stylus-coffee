@@ -2,9 +2,13 @@
 html
   head
     title #{title}
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css')
     link(rel='stylesheet', href='css/main.css')
   body
     #content
     block content
+    each script in scripts
+      script(type='javascript/text', src='#{script}')
     script(type='javascript/text', src='js/script.js')
+
 
