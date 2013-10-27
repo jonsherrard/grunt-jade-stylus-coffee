@@ -10,7 +10,7 @@ module.exports = (grunt) ->
         files: [
           expand: true
           cwd: 'src/jade/'
-          src: ['*.jade']
+          src: ['index.jade']
           dest: 'compiled/'
           ext: '.html'
         ]
@@ -26,7 +26,7 @@ module.exports = (grunt) ->
     coffee:
       compile:
         files:
-          'compiled/css/script.js' : 'src/coffee/script.coffee'
+          'compiled/js/script.js' : 'src/coffee/script.coffee'
 
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-stylus'
