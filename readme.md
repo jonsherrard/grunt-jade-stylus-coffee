@@ -9,4 +9,5 @@ config.json for variables made available to Jade file.
 Get started with:
 ```
 npm install
+grunt
 ```
